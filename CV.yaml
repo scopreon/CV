@@ -1,0 +1,217 @@
+cv:
+  name: Saul Cooperman
+  location: United Kingdom
+  email: saulcoops@gmail.com
+  phone: "+44 7943 080 262"
+  website: https://saul.sh/
+  social_networks:
+    - network: LinkedIn
+      username: saul-cooperman
+
+  sections:
+    summary:
+      - Software Engineer focused on building reliable, high-performance distributed systems in C++ and Python.
+      - Currently developing latency-sensitive middleware at Bloomberg L.P., supporting thousands of real-time services.
+      - Strong background in multithreading, distributed systems, and cross-team engineering.
+
+    experience:
+      - company: Bloomberg L.P.
+        position: Software Engineer
+        location: London, UK
+        start_date: 2024-09
+        highlights:
+        - Core contributor to a proprietary distributed messaging platform handling 300B+ messages/day with 99.999% uptime, serving as critical infrastructure firm-wide.
+        - Designed and maintained high-performance multithreaded SDKs in C++ and Python (Cython bindings) used by 17,000+ internal microservices across heterogeneous environments.
+        - Built and owned a schema-driven Python code-generation framework, growing adoption from ~700 to 1,600+ production services and shipping versioned internal packages at scale.
+        - Led observability and diagnostics improvements (metrics, logging, tracing) across core services, reducing incident detection and root-cause time from hours/days to seconds.
+        - Resolved ThreadSanitizer-reported concurrency issues in Bloomberg's BDE C++ libraries as part of the C++ Guild.
+
+
+      - company: Bloomberg L.P.
+        position: Software Engineer Intern
+        location: London, UK
+        start_date: 2023-06
+        end_date: 2023-09
+        highlights:
+          - Built a system to analyse service request data and assess impact of backward-incompatible message schema changes.
+          - Enabled teams to safely remove unused schema elements and improve maintainability.
+    education:
+      - institution: University of Leeds
+        area: Computer Science
+        degree: BSc
+        location: Leeds, UK
+        start_date: 2021-09
+        end_date: 2024-07
+        highlights:
+          - First Class Honours.
+          - "Final Year Project (First): A neuromechanical model of C. elegans steering behaviour integrating sensory and neural mechanisms, optimized using evolutionary algorithms."
+
+      - institution: City of London School
+        area: Mathematics, Further Mathematics, Physics, Chemistry
+        degree: A-Level / Pre-U
+        location: London, UK
+        start_date: 2019-09
+        end_date: 2021-07
+        highlights:
+          - Mathematics/Further Mathematics **D1** (**A\*\***).
+          - Awarded “The Worshipful Company of Needlemaker's Prize for Information Technology and Computing”.
+
+      - institution: Immanuel College
+        area: Mathematics, Further Mathematics, Computer Science, Electronics...
+        degree: GCSE
+        location: London, UK
+        start_date: 2016-09
+        end_date: 2019-07
+        highlights:
+          - 11 GCSEs (Grades 7-9)
+
+    personal_projects:
+      - name: Generic Compilation Database Generator
+        highlights:
+          - Reimplemented the C++ tool Bear in Rust, generating compilation database for Clang tooling by intercepting Linux build processes via LD_PRELOAD, syscall hooking, and a Unix Domain Socket server with Protobuf for structured data exchange.
+      - name: TFL Times - Real-time Transit App
+        highlights:
+          - Built a React frontend backed by a Python asyncio WebSocket server, including a fully custom typed TTL caching layer with extensive test coverage to minimise external API calls and latency.
+      - name: Dockerised React Website (CI/CD)
+        highlights:
+          - Developed a production-ready React application containerised with Docker, featuring GitHub Actions CI/CD on a self-hosted runner with automated testing and deployment.
+
+design:
+  theme: classic
+
+  page:
+    size: us-letter
+    top_margin: 0.7in
+    bottom_margin: 0.7in
+    left_margin: 0.7in
+    right_margin: 0.7in
+    show_footer: true
+    show_top_note: true
+
+  colors:
+    body: rgb(0, 0, 0)
+    name: rgb(0, 79, 144)
+    headline: rgb(0, 79, 144)
+    connections: rgb(0, 79, 144)
+    section_titles: rgb(0, 79, 144)
+    links: rgb(0, 79, 144)
+    footer: rgb(128, 128, 128)
+    top_note: rgb(128, 128, 128)
+
+  typography:
+    line_spacing: 0.6em
+    alignment: justified
+    date_and_location_column_alignment: right
+    font_family:
+      body: Source Sans 3
+      name: Source Sans 3
+      headline: Source Sans 3
+      connections: Source Sans 3
+      section_titles: Source Sans 3
+    font_size:
+      body: 10pt
+      name: 30pt
+      headline: 10pt
+      connections: 10pt
+      section_titles: 1.4em
+    small_caps:
+      name: false
+      headline: false
+      connections: false
+      section_titles: false
+    bold:
+      name: true
+      headline: false
+      connections: false
+      section_titles: true
+
+  links:
+    underline: false
+    show_external_link_icon: false
+
+  header:
+    alignment: center
+    photo_width: 3.5cm
+    photo_position: left
+    photo_space_left: 0.4cm
+    photo_space_right: 0.4cm
+    space_below_name: 0.7cm
+    space_below_headline: 0.7cm
+    space_below_connections: 0.7cm
+    connections:
+      phone_number_format: national
+      hyperlink: true
+      show_icons: true
+      display_urls_instead_of_usernames: false
+      separator: ""
+      space_between_connections: 0.5cm
+
+  section_titles:
+    type: with_partial_line
+    line_thickness: 0.5pt
+    space_above: 0.5cm
+    space_below: 0.3cm
+
+  sections:
+    allow_page_break: true
+    space_between_regular_entries: 0.8em
+    space_between_text_based_entries: 0.1em
+    show_time_spans_in:
+      - experience
+
+  entries:
+    date_and_location_width: 3.2cm
+    side_space: 0.2cm
+    space_between_columns: 0.1cm
+    allow_page_break: false
+    short_second_row: true
+    summary:
+      space_above: 0cm
+      space_left: 0cm
+    highlights:
+      bullet: •
+      nested_bullet: •
+      space_left: 0.15cm
+      space_above: 0cm
+      space_between_items: 0cm
+      space_between_bullet_and_text: 0.5em
+
+  templates:
+    footer: "*NAME -- PAGE_NUMBER/TOTAL_PAGES*"
+    top_note: "*LAST_UPDATED CURRENT_DATE*"
+    single_date: MONTH_ABBREVIATION YEAR
+    date_range: START_DATE – END_DATE
+    time_span: HOW_MANY_YEARS YEARS HOW_MANY_MONTHS MONTHS
+    one_line_entry:
+      main_column: "**LABEL:** DETAILS"
+    education_entry:
+      main_column: |-
+        **INSTITUTION**, AREA
+        SUMMARY
+        HIGHLIGHTS
+      degree_column: "**DEGREE**"
+      date_and_location_column: |-
+        LOCATION
+        DATE
+    normal_entry:
+      main_column: |-
+        **NAME**
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column: |-
+        LOCATION
+        DATE
+    experience_entry:
+      main_column: |-
+        **COMPANY**, POSITION
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column: |-
+        LOCATION
+        DATE
+    publication_entry:
+      main_column: |-
+        **TITLE**
+        AUTHORS
+        URL (JOURNAL)
+      date_and_location_column: DATE
