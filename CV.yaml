@@ -20,7 +20,7 @@ cv:
         highlights:
           - Core maintainor of a proprietary distributed messaging platform handling 300B+ messages/day with 99.999% uptime, serving as critical infrastructure firm-wide.
           - Design and maintain high-performance multithreaded SDKs in C++ and Python (Cython bindings) used by 17,000+ internal microservices across heterogeneous environments.
-          - Built and owned a schema-driven Python code-generation framework, growing adoption from ~700 to 1,600+ production services and shipping versioned internal packages at scale.
+          - Built and owned a schema-driven Python code-generation framework, growing adoption from ~700 to 2,000+ production services and shipping versioned internal packages at scale.
           - Lead observability and diagnostics improvements (metrics, logging, tracing) across core services, reducing incident detection and root-cause time from hours/days to seconds.
       - company: Bloomberg L.P.
         position: Software Engineer Intern

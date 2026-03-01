@@ -112,7 +112,7 @@ Strong background in multithreading, distributed systems, and cross-team enginee
 
     - Design and maintain high-performance multithreaded SDKs in C++ and Python (Cython bindings) used by 17,000+ internal microservices across heterogeneous environments.
 
-    - Built and owned a schema-driven Python code-generation framework, growing adoption from \~700 to 1,600+ production services and shipping versioned internal packages at scale.
+    - Built and owned a schema-driven Python code-generation framework, growing adoption from \~700 to 2,000+ production services and shipping versioned internal packages at scale.
 
     - Lead observability and diagnostics improvements (metrics, logging, tracing) across core services, reducing incident detection and root-cause time from hours\/days to seconds.
 
