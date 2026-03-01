@@ -5,7 +5,7 @@
 #show: rendercv.with(
   name: "Saul Cooperman",
   footer: context { [#emph[Saul Cooperman -- #str(here().page())\/#str(counter(page).final().first())]] },
-  top-note: [ #emph[Last updated in Jan 2026] ],
+  top-note: [ #emph[Last updated in Mar 2026] ],
   locale-catalog-language: "en",
   page-size: "us-letter",
   page-top-margin: 0.7in,
@@ -77,8 +77,8 @@
   entries-highlights-space-between-bullet-and-text: 0.5em,
   date: datetime(
     year: 2026,
-    month: 1,
-    day: 18,
+    month: 3,
+    day: 1,
   ),
 )
 
@@ -108,23 +108,19 @@ Strong background in multithreading, distributed systems, and cross-team enginee
   [
     #strong[Bloomberg L.P.], Software Engineer
 
-    - Core contributor to a proprietary distributed messaging platform handling 300B+ messages\/day with 99.999\% uptime, serving as critical infrastructure firm-wide.
+    - Core maintainor of a proprietary distributed messaging platform handling 300B+ messages\/day with 99.999\% uptime, serving as critical infrastructure firm-wide.
 
-    - Designed and maintained high-performance multithreaded SDKs in C++ and Python (Cython bindings) used by 17,000+ internal microservices across heterogeneous environments.
+    - Design and maintain high-performance multithreaded SDKs in C++ and Python (Cython bindings) used by 17,000+ internal microservices across heterogeneous environments.
 
     - Built and owned a schema-driven Python code-generation framework, growing adoption from \~700 to 1,600+ production services and shipping versioned internal packages at scale.
 
-    - Led observability and diagnostics improvements (metrics, logging, tracing) across core services, reducing incident detection and root-cause time from hours\/days to seconds.
-
-    - Resolved ThreadSanitizer-reported concurrency issues in Bloomberg's BDE C++ libraries as part of the C++ Guild.
+    - Lead observability and diagnostics improvements (metrics, logging, tracing) across core services, reducing incident detection and root-cause time from hours\/days to seconds.
 
   ],
   [
     London, UK
 
     Sept 2024 – present
-
-    1 year 5 months
 
   ],
 )
@@ -133,17 +129,15 @@ Strong background in multithreading, distributed systems, and cross-team enginee
   [
     #strong[Bloomberg L.P.], Software Engineer Intern
 
-    - Built a system to analyse service request data and assess impact of backward-incompatible message schema changes.
+    - Built a system to analyse live schemad requests and evaluate backward-incompatible changes.
 
-    - Enabled teams to safely remove unused schema elements and improve maintainability.
+    - Enabled teams to remove evolve message schemas confortably.
 
   ],
   [
     London, UK
 
     June 2023 – Sept 2023
-
-    4 months
 
   ],
 )
@@ -176,7 +170,7 @@ Strong background in multithreading, distributed systems, and cross-team enginee
 
     - Mathematics\/Further Mathematics #strong[D1] (#strong[A#sym.ast.basic#h(0pt, weak: true) #sym.ast.basic#h(0pt, weak: true) ]).
 
-    - Awarded “The Worshipful Company of Needlemaker's Prize for Information Technology and Computing”.
+    - Awarded “The Worshipful Company of Needlemaker's Prize for IT and Computing”.
 
   ],
   [
@@ -209,6 +203,19 @@ Strong background in multithreading, distributed systems, and cross-team enginee
 )
 
 == Personal Projects
+
+#regular-entry(
+  [
+    #strong[Open source contributions]
+
+    - PyStack: added Python 3.14 subinterpreter support
+
+    - BDE (Bloomberg C++ library): Resolved ThreadSanitizer-reported concurrency issues
+
+  ],
+  [
+  ],
+)
 
 #regular-entry(
   [
