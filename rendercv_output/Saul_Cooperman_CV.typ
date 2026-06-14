@@ -5,7 +5,7 @@
 #show: rendercv.with(
   name: "Saul Cooperman",
   footer: context { [#emph[Saul Cooperman -- #str(here().page())\/#str(counter(page).final().first())]] },
-  top-note: [ #emph[Last updated in Mar 2026] ],
+  top-note: [ #emph[Last updated in June 2026] ],
   locale-catalog-language: "en",
   page-size: "us-letter",
   page-top-margin: 0.7in,
@@ -61,7 +61,7 @@
   section-titles-space-below: 0.3cm,
   sections-allow-page-break: true,
   sections-space-between-text-based-entries: 0.1em,
-  sections-space-between-regular-entries: 0.8em,
+  sections-space-between-regular-entries: 0.6em,
   entries-date-and-location-width: 3.2cm,
   entries-side-space: 0.2cm,
   entries-space-between-columns: 0.1cm,
@@ -77,8 +77,8 @@
   entries-highlights-space-between-bullet-and-text: 0.5em,
   date: datetime(
     year: 2026,
-    month: 3,
-    day: 1,
+    month: 6,
+    day: 14,
   ),
 )
 
@@ -108,13 +108,13 @@ Strong background in multithreading, distributed systems, and cross-team enginee
   [
     #strong[Bloomberg L.P.], Software Engineer
 
-    - Core maintainor of a proprietary distributed messaging platform handling 300B+ messages\/day with 99.999\% uptime, serving as critical infrastructure firm-wide.
+    - Core maintainer of a proprietary distributed messaging platform and gateway infrastructure processing 300B+ messages daily with 99.999\% uptime, serving as mission-critical infrastructure across the firm.
 
-    - Design and maintain high-performance multithreaded SDKs in C++ and Python (Cython bindings) used by 17,000+ internal microservices across heterogeneous environments.
+    - Lead development of high-performance, multithreaded C++ and Python SDKs with native bindings used by 17,000+ internal microservices across diverse production environments.
 
-    - Built and owned a schema-driven Python code-generation framework, growing adoption from \~700 to 2,000+ production services and shipping versioned internal packages at scale.
+    - Increased CI reliability by 30\% by building tooling to diagnose flaky failures, leading performance optimization efforts for a high-performance Python library with Cython bindings, and establishing automated benchmarking infrastructure to detect regressions across library releases.
 
-    - Lead observability and diagnostics improvements (metrics, logging, tracing) across core services, reducing incident detection and root-cause time from hours\/days to seconds.
+    - Architect and own a schema-driven Python code generation framework adopted by 3,000+ production services (up from \~700), enabling versioned package distribution at enterprise scale.
 
   ],
   [
@@ -184,33 +184,11 @@ Strong background in multithreading, distributed systems, and cross-team enginee
   ],
 )
 
-#education-entry(
-  [
-    #strong[Immanuel College], Mathematics, Further Mathematics, Computer Science, Electronics...
-
-    - 11 GCSEs (Grades 7-9)
-
-  ],
-  [
-    London, UK
-
-    Sept 2016 – July 2019
-
-  ],
-  degree-column: [
-    #strong[GCSE]
-  ],
-)
-
 == Personal Projects
 
 #regular-entry(
   [
-    #strong[Open source contributions]
-
-    - PyStack: added Python 3.14 subinterpreter support
-
-    - BDE (Bloomberg C++ library): Resolved ThreadSanitizer-reported concurrency issues
+    #strong[Open source contributions to Pystack, CPython, BDE]
 
   ],
   [
@@ -241,9 +219,11 @@ Strong background in multithreading, distributed systems, and cross-team enginee
 
 #regular-entry(
   [
-    #strong[Dockerised React Website (CI\/CD)]
+    #strong[Overengineered Tic-Tac-Toe]
 
-    - Developed a production-ready React application containerised with Docker, featuring GitHub Actions CI\/CD on a self-hosted runner with automated testing and deployment.
+    - Implemented a Tic-Tac-Toe engine in C++ with Python bindings via pybind11, using bitboards.
+
+    - Explored ARM NEON SIMD intrinsics for board evaluation and low-level performance optimization.
 
   ],
   [
