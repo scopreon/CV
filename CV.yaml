@@ -29,8 +29,8 @@ cv:
         start_date: 2023-06
         end_date: 2023-09
         highlights:
-          - Built a system to analyse live schemad requests and evaluate backward-incompatible changes.
-          - Enabled teams to remove evolve message schemas confortably.
+          - Built a system to analyse live encoded requests and evaluate backward-incompatible changes.
+          - Enabled teams to evolve message schemas confortably.
     education:
       - institution: University of Leeds
         area: Computer Science

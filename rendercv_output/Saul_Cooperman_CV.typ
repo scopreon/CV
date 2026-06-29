@@ -78,7 +78,7 @@
   date: datetime(
     year: 2026,
     month: 6,
-    day: 14,
+    day: 29,
   ),
 )
 
@@ -129,9 +129,9 @@ Strong background in multithreading, distributed systems, and cross-team enginee
   [
     #strong[Bloomberg L.P.], Software Engineer Intern
 
-    - Built a system to analyse live schemad requests and evaluate backward-incompatible changes.
+    - Built a system to analyse live encoded requests and evaluate backward-incompatible changes.
 
-    - Enabled teams to remove evolve message schemas confortably.
+    - Enabled teams to evolve message schemas confortably.
 
   ],
   [
