@@ -29,7 +29,7 @@ cv:
         start_date: 2023-06
         end_date: 2023-09
         highlights:
-          - Built a system to analyse live encoded requests and evaluate backward-incompatible changes.
+          - Built a system to analyse live encoded requests and evaluate backward-incompatible changes to the schema which encoded them.
           - Enabled teams to evolve message schemas confortably.
     education:
       - institution: University of Leeds

@@ -5,7 +5,7 @@
 #show: rendercv.with(
   name: "Saul Cooperman",
   footer: context { [#emph[Saul Cooperman -- #str(here().page())\/#str(counter(page).final().first())]] },
-  top-note: [ #emph[Last updated in June 2026] ],
+  top-note: [ #emph[Last updated in July 2026] ],
   locale-catalog-language: "en",
   page-size: "us-letter",
   page-top-margin: 0.7in,
@@ -77,8 +77,8 @@
   entries-highlights-space-between-bullet-and-text: 0.5em,
   date: datetime(
     year: 2026,
-    month: 6,
-    day: 29,
+    month: 7,
+    day: 6,
   ),
 )
 
@@ -129,7 +129,7 @@ Strong background in multithreading, distributed systems, and cross-team enginee
   [
     #strong[Bloomberg L.P.], Software Engineer Intern
 
-    - Built a system to analyse live encoded requests and evaluate backward-incompatible changes.
+    - Built a system to analyse live encoded requests and evaluate backward-incompatible changes to the schema which encoded them.
 
     - Enabled teams to evolve message schemas confortably.
 
