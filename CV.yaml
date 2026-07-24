@@ -9,8 +9,10 @@ cv:
       username: saul-cooperman
   sections:
     summary:
-      - Software Engineer focused on building reliable, high-performance distributed systems in C++ and Python.
-      - Currently developing latency-sensitive middleware at Bloomberg L.P., supporting thousands of real-time services.
+      - Software Engineer focused on building reliable, high-performance distributed
+        systems in C++ and Python.
+      - Currently developing latency-sensitive middleware at Bloomberg L.P., supporting
+        thousands of real-time services.
       - Strong background in multithreading, distributed systems, and cross-team engineering.
     experience:
       - company: Bloomberg L.P.
@@ -18,18 +20,27 @@ cv:
         location: London, UK
         start_date: 2024-09
         highlights:
-          - Core maintainer of a proprietary distributed messaging platform and gateway infrastructure processing 300B+ messages daily with 99.999% uptime, serving as mission-critical infrastructure across the firm.
-          - Lead development of high-performance, multithreaded C++ and Python SDKs with native bindings used by 17,000+ internal microservices across diverse production environments.
-          - Increased CI reliability by 30% by building tooling to diagnose flaky failures, leading performance optimization efforts for a high-performance Python library with Cython bindings, and establishing automated benchmarking infrastructure to detect regressions across library releases.
-          - Architect and own a schema-driven Python code generation framework adopted by 3,000+ production services (up from ~700), enabling versioned package distribution at enterprise scale.
-
+          - Core maintainer of a proprietary distributed messaging platform and gateway
+            infrastructure processing 300B+ messages daily with 99.999% uptime, serving
+            as mission-critical infrastructure across the firm.
+          - Lead development of high-performance, multithreaded C++ and Python SDKs
+            with native bindings used by 17,000+ internal microservices across diverse
+            production environments.
+          - Increased CI reliability by 30% by building tooling to diagnose flaky
+            failures, leading performance optimization efforts for a high-performance
+            Python library with Cython bindings, and establishing automated benchmarking
+            infrastructure to detect regressions across library releases.
+          - Architect and own a schema-driven Python code generation framework adopted
+            by 3,000+ production services (up from ~700), enabling versioned package
+            distribution at enterprise scale.
       - company: Bloomberg L.P.
         position: Software Engineer Intern
         location: London, UK
         start_date: 2023-06
         end_date: 2023-09
         highlights:
-          - Built a system to analyse live encoded requests and evaluate backward-incompatible changes to the schema which encoded them.
+          - Built a system to analyse live encoded requests and evaluate backward-incompatible
+            changes to the schema which encoded them.
           - Enabled teams to evolve message schemas confortably.
     education:
       - institution: University of Leeds
@@ -40,7 +51,9 @@ cv:
         end_date: 2024-07
         highlights:
           - First Class Honours.
-          - "Final Year Project (First): A neuromechanical model of C. elegans steering behaviour integrating sensory and neural mechanisms, optimized using evolutionary algorithms."
+          - "Final Year Project (First): A neuromechanical model of C. elegans steering
+            behaviour integrating sensory and neural mechanisms, optimized using evolutionary
+            algorithms."
       - institution: City of London School
         area: Mathematics, Further Mathematics, Physics, Chemistry
         degree: A-Level / Pre-U
@@ -51,17 +64,29 @@ cv:
           - Mathematics/Further Mathematics **D1** (**A\*\***).
           - Awarded “The Worshipful Company of Needlemaker's Prize for IT and Computing”.
     personal_projects:
-      - name: Open source contributions to Pystack, CPython, BDE
+      - name: PyStack subinterpreter support (open-source Python debugging tool)
+        highlights:
+          - Contributed subinterpreter support, enabling accurate reconstruction of
+            both Python and native (C) stack frames across multiple subinterpreters
+            within a single process.
       - name: Generic Compilation Database Generator
         highlights:
-          - Reimplemented the C++ tool Bear in Rust, generating compilation database for Clang tooling by intercepting Linux build processes via LD_PRELOAD, syscall hooking, and a Unix Domain Socket server with Protobuf for structured data exchange.
+          - Reimplemented the C++ tool Bear in Rust, generating compilation database
+            for Clang tooling by intercepting Linux build processes via LD_PRELOAD,
+            syscall hooking, and a Unix Domain Socket server with Protobuf for structured
+            data exchange.
       - name: TFL Times - Real-time Transit App
         highlights:
-          - Built a React frontend backed by a Python asyncio WebSocket server, including a fully custom typed TTL caching layer with extensive test coverage to minimise external API calls and latency.
+          - Built a React frontend backed by a Python asyncio WebSocket server, including
+            a fully custom typed TTL caching layer with extensive test coverage to
+            minimise external API calls and latency.
       - name: Overengineered Tic-Tac-Toe
         highlights:
-          - Implemented a Tic-Tac-Toe engine in C++ with Python bindings via pybind11, using bitboards.
-          - Explored ARM NEON SIMD intrinsics for board evaluation and low-level performance optimization.
+          - Implemented a Tic-Tac-Toe engine in C++ with Python bindings via pybind11,
+            using bitboards.
+          - Explored ARM NEON SIMD intrinsics for board evaluation and low-level perf
+            optimizations.
+      - name: Open source contributions to Pystack, CPython, BDE
 design:
   theme: classic
   page:
@@ -118,7 +143,7 @@ design:
     photo_space_right: 0.4cm
     space_below_name: 0.7cm
     space_below_headline: 0.7cm
-    space_below_connections: 0.7cm
+    space_below_connections: 0.5cm
     connections:
       phone_number_format: national
       hyperlink: true

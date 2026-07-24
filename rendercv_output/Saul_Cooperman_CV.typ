@@ -1,12 +1,14 @@
 // Import the rendercv function and all the refactored components
-#import "@preview/rendercv:0.1.0": *
+#import "@preview/rendercv:0.3.0": *
 
 // Apply the rendercv template with custom configuration
 #show: rendercv.with(
   name: "Saul Cooperman",
+  title: "Saul Cooperman - CV",
   footer: context { [#emph[Saul Cooperman -- #str(here().page())\/#str(counter(page).final().first())]] },
   top-note: [ #emph[Last updated in July 2026] ],
   locale-catalog-language: "en",
+  text-direction: ltr,
   page-size: "us-letter",
   page-top-margin: 0.7in,
   page-bottom-margin: 0.7in,
@@ -49,7 +51,7 @@
   header-photo-width: 3.5cm,
   header-space-below-name: 0.7cm,
   header-space-below-headline: 0.7cm,
-  header-space-below-connections: 0.7cm,
+  header-space-below-connections: 0.5cm,
   header-connections-hyperlink: true,
   header-connections-show-icons: true,
   header-connections-display-urls-instead-of-usernames: false,
@@ -67,6 +69,7 @@
   entries-space-between-columns: 0.1cm,
   entries-allow-page-break: false,
   entries-short-second-row: true,
+  entries-degree-width: 1cm,
   entries-summary-space-left: 0cm,
   entries-summary-space-above: 0cm,
   entries-highlights-bullet:  "•" ,
@@ -78,7 +81,7 @@
   date: datetime(
     year: 2026,
     month: 7,
-    day: 6,
+    day: 23,
   ),
 )
 
@@ -188,7 +191,9 @@ Strong background in multithreading, distributed systems, and cross-team enginee
 
 #regular-entry(
   [
-    #strong[Open source contributions to Pystack, CPython, BDE]
+    #strong[PyStack subinterpreter support (open-source Python debugging tool)]
+
+    - Contributed subinterpreter support, enabling accurate reconstruction of both Python and native (C) stack frames across multiple subinterpreters within a single process.
 
   ],
   [
@@ -223,7 +228,16 @@ Strong background in multithreading, distributed systems, and cross-team enginee
 
     - Implemented a Tic-Tac-Toe engine in C++ with Python bindings via pybind11, using bitboards.
 
-    - Explored ARM NEON SIMD intrinsics for board evaluation and low-level performance optimization.
+    - Explored ARM NEON SIMD intrinsics for board evaluation and low-level perf optimizations.
+
+  ],
+  [
+  ],
+)
+
+#regular-entry(
+  [
+    #strong[Open source contributions to Pystack, CPython, BDE]
 
   ],
   [
