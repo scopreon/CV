@@ -86,7 +86,7 @@ cv:
             using bitboards.
           - Explored ARM NEON SIMD intrinsics for board evaluation and low-level perf
             optimizations.
-      - name: Open source contributions to Pystack, CPython, BDE
+      - name: Open source contributions to Pystack, Cython, CPython, BDE
 design:
   theme: classic
   page:

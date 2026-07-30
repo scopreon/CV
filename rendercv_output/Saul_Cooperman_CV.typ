@@ -81,7 +81,7 @@
   date: datetime(
     year: 2026,
     month: 7,
-    day: 23,
+    day: 31,
   ),
 )
 
@@ -237,7 +237,7 @@ Strong background in multithreading, distributed systems, and cross-team enginee
 
 #regular-entry(
   [
-    #strong[Open source contributions to Pystack, CPython, BDE]
+    #strong[Open source contributions to Pystack, Cython, CPython, BDE]
 
   ],
   [
