@@ -5,7 +5,6 @@ set -euo pipefail
 repo_root="$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
 source_file="${repo_root}/CV.yaml"
 output_dir="${repo_root}/rendercv_output"
-hash_file="${output_dir}/.cv_hash"
 
 if [[ ! -f "${source_file}" ]]; then
   echo "Could not find ${source_file}."
@@ -17,16 +16,23 @@ if [[ ! -d "${output_dir}" ]]; then
   exit 1
 fi
 
-if [[ ! -f "${hash_file}" ]]; then
-  echo "Missing ${hash_file}. Run 'make build'."
+mapfile -t generated_files < <(find "${output_dir}" -type f | sort)
+
+if [[ ${#generated_files[@]} -eq 0 ]]; then
+  echo "No generated files found in ${output_dir}. Run 'make build'."
   exit 1
 fi
 
-current_hash="$(sha256sum "${source_file}" | awk '{print $1}')"
-stored_hash="$(cat "${hash_file}")"
+stale_files=0
+for generated_file in "${generated_files[@]}"; do
+  if [[ ! "${generated_file}" -nt "${source_file}" ]]; then
+    echo "Out-of-date generated file: ${generated_file}"
+    stale_files=1
+  fi
+done
 
-if [[ "${current_hash}" != "${stored_hash}" ]]; then
-  echo "CV.yaml has changed since last build. Run 'make build'."
+if [[ ${stale_files} -ne 0 ]]; then
+  echo "Generated files are older than CV.yaml. Run 'make build'."
   exit 1
 fi
 
