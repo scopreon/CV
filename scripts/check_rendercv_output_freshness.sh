@@ -25,7 +25,7 @@ fi
 
 stale_files=0
 for generated_file in "${generated_files[@]}"; do
-  if [[ "${generated_file}" -ot "${source_file}" ]]; then
+  if [[ ! "${generated_file}" -nt "${source_file}" ]]; then
     echo "Out-of-date generated file: ${generated_file}"
     stale_files=1
   fi

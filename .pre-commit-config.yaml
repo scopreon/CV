@@ -11,6 +11,7 @@ repos:
     hooks:
       - id: rendercv-output-freshness
         name: rendercv output freshness
-        entry: /home/runner/work/CV/CV/scripts/check_rendercv_output_freshness.sh
+        entry: scripts/check_rendercv_output_freshness.sh
         language: system
         pass_filenames: false
+        always_run: true
