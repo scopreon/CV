@@ -7,7 +7,8 @@ build:
 		uv run rendercv render CV.yaml \
 			--dont-generate-markdown \
 			--dont-generate-html \
-			--dont-generate-png 
+			--dont-generate-png
+		sha256sum CV.yaml | awk '{print $$1}' > rendercv_output/.cv_hash
 
 .PHONY: build-watch
 build-watch:
