@@ -1,0 +1,17 @@
+repos:
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.4.1
+    hooks:
+      - id: codespell
+        args:
+          - --ignore-words=.codespell-ignore-words.txt
+          - --skip=rendercv_output/*
+
+  - repo: local
+    hooks:
+      - id: rendercv-output-freshness
+        name: rendercv output freshness
+        entry: scripts/check_rendercv_output_freshness.sh
+        language: system
+        pass_filenames: false
+        always_run: true

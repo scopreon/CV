@@ -41,7 +41,7 @@ cv:
         highlights:
           - Built a system to analyse live encoded requests and evaluate backward-incompatible
             changes to the schema which encoded them.
-          - Enabled teams to evolve message schemas confortably.
+          - Enabled teams to evolve message schemas comfortably.
     education:
       - institution: University of Leeds
         area: Computer Science
