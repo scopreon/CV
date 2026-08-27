@@ -7,7 +7,7 @@ build:
 		uv run rendercv render CV.yaml \
 			--dont-generate-markdown \
 			--dont-generate-html \
-			--dont-generate-png 
+			--dont-generate-png
 
 .PHONY: build-watch
 build-watch:
