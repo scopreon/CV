@@ -26,10 +26,10 @@ cv:
           - Lead development of high-performance, multithreaded C++ and Python SDKs
             with native bindings used by 17,000+ internal microservices across diverse
             production environments.
-          - Increased CI reliability by 30% by building tooling to diagnose flaky
-            failures, leading performance optimization efforts for a high-performance
-            Python library with Cython bindings, and establishing automated benchmarking
-            infrastructure to detect regressions across library releases.
+          - Increased throughput of a high-performance multithreaded Python library
+            with C++ bindings by 35% by building benchmarking and stress-testing infrastructure,
+            identifying bottlenecks, and leading optimizations involving CPython internals
+            and Python/C++ interoperability.
           - Architect and own a schema-driven Python code generation framework adopted
             by 3,000+ production services (up from ~700), enabling versioned package
             distribution at enterprise scale.

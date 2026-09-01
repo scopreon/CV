@@ -6,7 +6,7 @@
   name: "Saul Cooperman",
   title: "Saul Cooperman - CV",
   footer: context { [#emph[Saul Cooperman -- #str(here().page())\/#str(counter(page).final().first())]] },
-  top-note: [ #emph[Last updated in Aug 2026] ],
+  top-note: [ #emph[Last updated in Sept 2026] ],
   locale-catalog-language: "en",
   text-direction: ltr,
   page-size: "us-letter",
@@ -80,8 +80,8 @@
   entries-highlights-space-between-bullet-and-text: 0.5em,
   date: datetime(
     year: 2026,
-    month: 8,
-    day: 27,
+    month: 9,
+    day: 1,
   ),
 )
 
@@ -115,7 +115,7 @@ Strong background in multithreading, distributed systems, and cross-team enginee
 
     - Lead development of high-performance, multithreaded C++ and Python SDKs with native bindings used by 17,000+ internal microservices across diverse production environments.
 
-    - Increased CI reliability by 30\% by building tooling to diagnose flaky failures, leading performance optimization efforts for a high-performance Python library with Cython bindings, and establishing automated benchmarking infrastructure to detect regressions across library releases.
+    - Increased throughput of a high-performance multithreaded Python library with C++ bindings by 35\% by building benchmarking and stress-testing infrastructure, identifying bottlenecks, and leading optimizations involving CPython internals and Python\/C++ interoperability.
 
     - Architect and own a schema-driven Python code generation framework adopted by 3,000+ production services (up from \~700), enabling versioned package distribution at enterprise scale.
 
