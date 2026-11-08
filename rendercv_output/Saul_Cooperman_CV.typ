@@ -99,9 +99,9 @@
 
 == Summary
 
-Software Engineer focused on building reliable, high-performance distributed systems in C++ and Python.
+Software Engineer focused on building reliable, high-performance distributed systems in Go, C++ and Python.
 
-Currently developing latency-sensitive middleware at Bloomberg L.P., supporting thousands of real-time services.
+Previously developed latency-sensitive middleware at Bloomberg L.P., supporting thousands of real-time services.
 
 Strong background in multithreading, distributed systems, and cross-team engineering.
 
