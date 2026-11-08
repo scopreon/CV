@@ -6,7 +6,7 @@
   name: "Saul Cooperman",
   title: "Saul Cooperman - CV",
   footer: context { [#emph[Saul Cooperman -- #str(here().page())\/#str(counter(page).final().first())]] },
-  top-note: [ #emph[Last updated in Sept 2026] ],
+  top-note: [ #emph[Last updated in Nov 2026] ],
   locale-catalog-language: "en",
   text-direction: ltr,
   page-size: "us-letter",
@@ -80,8 +80,8 @@
   entries-highlights-space-between-bullet-and-text: 0.5em,
   date: datetime(
     year: 2026,
-    month: 9,
-    day: 1,
+    month: 11,
+    day: 8,
   ),
 )
 
@@ -109,11 +109,26 @@ Strong background in multithreading, distributed systems, and cross-team enginee
 
 #regular-entry(
   [
+    #strong[XTX Markets], Software Engineer
+
+    - Engineering Software
+
+  ],
+  [
+    London, UK
+
+    Nov 2026 – present
+
+  ],
+)
+
+#regular-entry(
+  [
     #strong[Bloomberg L.P.], Software Engineer
 
     - Core maintainer of a proprietary distributed messaging platform and gateway infrastructure processing 300B+ messages daily with 99.999\% uptime, serving as mission-critical infrastructure across the firm.
 
-    - Lead development of high-performance, multithreaded C++ and Python SDKs with native bindings used by 17,000+ internal microservices across diverse production environments.
+    - Built and owned a Grafana observability dashboard for a critical subsystem of the distributed messaging platform, reducing mean time to diagnose production issues by 60\% over six months.
 
     - Increased throughput of a high-performance multithreaded Python library with C++ bindings by 35\% by building benchmarking and stress-testing infrastructure, identifying bottlenecks, and leading optimizations involving CPython internals and Python\/C++ interoperability.
 
@@ -123,7 +138,7 @@ Strong background in multithreading, distributed systems, and cross-team enginee
   [
     London, UK
 
-    Sept 2024 – present
+    Sept 2024 – Oct 2026
 
   ],
 )
@@ -205,17 +220,6 @@ Strong background in multithreading, distributed systems, and cross-team enginee
     #strong[Generic Compilation Database Generator]
 
     - Reimplemented the C++ tool Bear in Rust, generating compilation database for Clang tooling by intercepting Linux build processes via LD\_PRELOAD, syscall hooking, and a Unix Domain Socket server with Protobuf for structured data exchange.
-
-  ],
-  [
-  ],
-)
-
-#regular-entry(
-  [
-    #strong[TFL Times - Real-time Transit App]
-
-    - Built a React frontend backed by a Python asyncio WebSocket server, including a fully custom typed TTL caching layer with extensive test coverage to minimise external API calls and latency.
 
   ],
   [
